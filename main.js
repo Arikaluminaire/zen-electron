@@ -15,7 +15,11 @@ const TARGET_URL = 'https://music.youtube.com/';
 
 /* ---------- Identitas & stealth (Fase 1-2) ---------- */
 if (process.platform === 'win32') {
-  app.setAppUserModelId('com.zenelectron.ytmusicdesktop');
+  app.setAppUserModelId(
+    app.isPackaged
+      ? 'com.zenelectron.ytmusicdesktop'        // identitas aplikasi ter-install
+      : 'com.zenelectron.ytmusicdesktop.dev'   // identitas terpisah untuk development
+  );
 }
 
 const chromeVersion = process.versions.chrome || '126.0.0.0';
