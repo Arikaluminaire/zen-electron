@@ -159,7 +159,7 @@ function buildTrayMenu() {
   if (!tray) return;
   const trackLabel = currentTrack
     ? `${currentTrack.title} — ${currentTrack.artist}`
-    : 'YouTube Music Desktop';
+    : `YouTube Music Desktop v${app.getVersion()}`;
 
   const template = [
     { label: trackLabel.substring(0, 60), enabled: false },
