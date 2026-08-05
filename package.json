@@ -1,6 +1,6 @@
 {
   "name": "zen-electron",
-  "version": "0.1.0",
+  "version": "0.8.0",
   "description": "Desktop wrapper for YouTube Music",
   "main": "main.js",
   "scripts": {
@@ -24,7 +24,7 @@
         "publish": [
       {
         "provider": "github",
-        "owner": "USERNAME_GITHUB_KAMU",
+        "owner": "Arikaluminaire",
         "repo": "zen-electron"
       }
     ],
